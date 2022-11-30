@@ -30,44 +30,44 @@
 * The variables ‘systolic BP’ and ‘diastolic BP’ are highly correlated.
 * To handle high correlation between two independent variables, we can introduce a new variable ‘pulse_pressure’
 
-#Modelling Summary:
+# Modelling Summary:
 
-Logistic Regression:
+1.Logistic Regression:
 
 * In statistics, the (binary) logistic model is a statistical model that models the probability of one event (out of two alternatives) taking place by having the log-odds (the logarithm of the odds) for the event be a linear combination of one or more independent variables.
 * This can be considered as the baseline model to obtain predictions since it is easy to explain.
 * Logistic Regression train recall: 0.69
 * Logistic Regression test recall: 0.66
 
- K-nearest Neighbors:
+ 2. K-nearest Neighbors:
 
 * The k-nearest neighbors algorithm, also known as KNN, is a non-parametric, supervised learning classifier, which uses proximity to make classifications or predictions about the grouping of an individual data point.
 * Best hyperparameters: K = 55
 * K nearest neighbors train recall: 0.83
 * K nearest neighbors test recall: 0.69
 
-Naïve Bayes:
+3. Naïve Bayes:
 
 * Naive Bayes classifiers are a collection of classification algorithms based on Bayes’ Theorem. It is not a single algorithm but a family of algorithms where all of them share a common principle, i.e., every pair of features being classified is independent of each other.
 * Best hyperparameters: var_smoothing= 0.657933224657568
 * Naïve Bayes train recall: 0.53
 * Naïve Bayes test recall: 0.50
 
- Decision Tree:
+ 4. Decision Tree:
 
 * A Decision tree is a flowchart-like tree structure, where each internal node denotes a test on an attribute, each branch represents an outcome of the test, and each leaf node (terminal node) holds a class label.
 * Best hyperparameters: max_depth: 1, min_samples_leaf: 0.1, min_samples_split: 0.1
 * Decision tree train recall: 0.86
 * Decision tree test recall: 0.77
 
- Support Vector Machine:
+ 5. Support Vector Machine:
 
 * Support Vector Machine (SVM) is a supervised machine learning algorithm used for both classification and regression. The objective of SVM algorithm is to find a hyperplane in an N-dimensional space that distinctly classifies the data points.
 * Best hyperparameters: C: 1, gamma: 0.01, kernel: rbf
 * SVM train recall: 0.74
 * SVM test recall: 0.69
 
-XG Boost:
+6. XG Boost:
 
 * In this algorithm, decision trees are created in sequential form. Weights play an important role in XGBoost. Weights are assigned to all the independent variables which are then fed into the decision tree which predicts results. The weight of variables predicted wrong by the tree is increased and these variables are then fed to the second decision tree. These individual classifiers/predictors then ensemble to give a strong and more precise model. It can work on regression, classification, ranking, and user-defined prediction problems.
 * Best hyperparameters: max_depth: 1, min_samples_leaf: 0.1, min_samples_split: 0.1, n_estimators: 500
